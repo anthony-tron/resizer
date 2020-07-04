@@ -23,7 +23,7 @@ if (!Array.prototype.last){
 };
 
 File.prototype.extension = function() {
-	return this.name.split('.').last();
+	return this.name.split('.').last().toLowerCase();
 };
 
 function saveOptions(file) {
